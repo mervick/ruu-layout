@@ -22,9 +22,13 @@ fi
 regex='<layout>[\s\n]*<configItem>[\s\n]*<name>ru<\/name>[a-zA-Z0-9\s\n<>\/]*<\/configItem>[\s\n]*<variantList>'
 regex2="$(echo "$regex" | sed 's/\\s/[:space:]/g')"
 
-if [[ "$(cat "$extra_file" | grep -zoP "$regex")" == "" || "$(cat "$evdev_file" | grep -zoP "$regex")" ]]; then
+if [[ "$(cat "$evdev_file" | grep -zoP "$regex")" == "" ]]; then
   (1>&2 echo 'Unable to find "ru" layout')
   exit 4
+fi
+if [[ "$(cat "$extra_file" | grep -zoP "$regex")" == "" ]]; then
+  (1>&2 echo 'Unable to find "ru" layout')
+  exit 5
 fi
 
 if [[ -f "$evdev_file.back" ]]; then
