@@ -1,0 +1,24 @@
+
+      <variant>
+        <configItem>
+          <name>ruu</name>
+          <shortDescription>ru</shortDescription>
+          <description>Russian (with Ukrainian-Belorussian layout)</description>
+          <languageList>
+            <iso639Id>rus</iso639Id>
+            <iso639Id>ukr</iso639Id>
+            <iso639Id>bel</iso639Id>
+          </languageList>
+        </configItem>
+      </variant>
+      <variant>
+        <configItem>
+          <name>ruua</name>
+          <shortDescription>ru</shortDescription>
+          <description>Russian (with UKR layout)</description>
+          <languageList>
+            <iso639Id>rus</iso639Id>
+            <iso639Id>ukr</iso639Id>
+          </languageList>
+        </configItem>
+      </variant>
