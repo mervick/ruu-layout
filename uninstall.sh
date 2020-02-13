@@ -7,7 +7,6 @@ if [[ "$user" != 'root' ]]; then
 fi
 
 evdev_file=/usr/share/X11/xkb/rules/evdev.xml
-evdev_file=/tmp/evdev.xml
 
 if [[ -f "$evdev_file.back" ]]; then
   cp "$evdev_file.back" "$evdev_file"

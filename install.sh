@@ -7,7 +7,6 @@ if [[ "$user" != 'root' ]]; then
 fi
 
 evdev_file=/usr/share/X11/xkb/rules/evdev.xml
-evdev_file=/tmp/evdev.xml
 
 if [[ "$(cat $evdev_file | grep '<name>ruu</name>')" != "" ]]; then
   (1>&2 echo 'Layout variant "ruu" is already installed in your evdev.xml file')
