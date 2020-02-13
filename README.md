@@ -9,7 +9,7 @@ sudo bash install.sh
 ```
 
 This adds `ruu` (Russian-Ukrainian-Belorussian) and `ruua` (Russian-Ukrainian) 
-layouts to your xkb settings (`/usr/share/X11/xkb/rules/evdev.xml`).
+layouts to your xkb settings (`/usr/share/X11/xkb/rules/evdev.xml`).  
 During installation it creates backup file (`/usr/share/X11/xkb/rules/evdev.xml.back`), 
 which used for uninstall script, please don't remove it manually.
 
