@@ -8,9 +8,9 @@ To install `ruu` layout with Russian-Ukrainian-Belorussian layout, run
 sudo bash install.sh
 ```
 
-This adds `ruu` (Russian-Ukrainian-Belorussian) and `ruua` (Russian-Ukrainian) 
-layouts to your xkb settings (`/usr/share/X11/xkb/rules/evdev.xml`).  
-During installation it creates backup file (`/usr/share/X11/xkb/rules/evdev.xml.back`), 
+This script adds `ruu` Russian-Ukrainian-Belorussian 
+layout to your xkb settings (`/usr/share/X11/xkb/rules/evdev.xml`).  
+During installation it creates backup file `/usr/share/X11/xkb/rules/evdev.xml.back`, 
 which used for uninstall script, please don't remove it manually.
 
 To uninstall:
