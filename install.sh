@@ -14,21 +14,16 @@ if [[ "$(cat $evdev_file | grep '<name>ruu</name>')" != "" ]]; then
   exit 2
 fi
 
-if [[ "$(cat "$evdev_file" | grep '<name>ruua</name>')" != "" ]]; then
-  (1>&2 echo 'Layout variant "ruua" is already installed in your evdev.xml file')
-  exit 3
-fi
-
 regex='<layout>[\s\n]*<configItem>[\s\n]*<name>ru<\/name>[a-zA-Z0-9\s\n<>\/]*<\/configItem>[\s\n]*<variantList>'
 regex2="$(echo "$regex" | sed 's/\\s/[:space:]/g')"
 
 if [[ "$(cat "$evdev_file" | grep -zoP "$regex")" == "" ]]; then
   (1>&2 echo 'Unable to find "ru" layout')
-  exit 4
+  exit 3
 fi
 if [[ "$(cat "$extra_file" | grep -zoP "$regex")" == "" ]]; then
   (1>&2 echo 'Unable to find "ru" layout')
-  exit 5
+  exit 4
 fi
 
 if [[ -f "$evdev_file.back" ]]; then
