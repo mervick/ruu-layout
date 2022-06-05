@@ -5,7 +5,7 @@ RUU: Russian-Ukrainian United keyboard layout
 To install `ruu` layout with Russian-Ukrainian-Belorussian layout, run
 
 ```bash
-sudo bash install.sh
+sudo bash install.py
 ```
 
 This script adds `ruu` Russian-Ukrainian-Belorussian 
