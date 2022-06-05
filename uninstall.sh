@@ -6,7 +6,7 @@ if [[ "$user" != 'root' ]]; then
   exit 1
 fi
 
-extra_file=/usr/share/X11/xkb/rules/evdev.extras.xml
+#extra_file=/usr/share/X11/xkb/rules/evdev.extras.xml
 evdev_file=/usr/share/X11/xkb/rules/evdev.xml
 
 if [[ ! -f "$evdev_file.back" ]]; then
@@ -21,4 +21,4 @@ fi
 
 
 cp "$evdev_file.back" "$evdev_file"
-cp "$extra_file.back" "$extra_file"
+#cp "$extra_file.back" "$extra_file"
